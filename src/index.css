@@ -11,3 +11,52 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.card-container{
+  padding: 2vw;
+  display: flex;
+  gap: 2vw;
+}
+
+.card{
+  /* display: flex; */
+  height: 75vh;
+  width: 30vw;
+  border: 2px solid black;
+  padding: 1vw;
+}
+
+.op-img{
+  height: 55vh;
+  width: 28vw;
+  margin: 2px;
+}
+
+.card-data{
+  margin-left: 18px;
+}
+
+.detailed-container{
+  /* width: 100vw;
+  height: 100vh; */
+  background-color: rgb(241, 237, 237);
+}
+
+.details{
+  margin: 20px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  height: 80vh;
+  width: 80vw;
+  background-color: white;
+}
+
+.details h1{
+  margin-left: 2vw;
+}
+
+.details img{
+  margin-left: 2vw;
+  width: 40vw;
+  height: 50vh;
+}
