@@ -49,14 +49,31 @@ code {
   height: 80vh;
   width: 80vw;
   background-color: white;
+  position: relative;
+  display: flex;
+  gap: 30px;
 }
 
-.details h1{
+.details-left h1{
   margin-left: 2vw;
 }
 
-.details img{
+.details-left img{
   margin-left: 2vw;
-  width: 40vw;
-  height: 50vh;
+  width: 38vw;
+  height: 70vh;
+}
+
+.details button {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+}
+
+.details-right{
+  width: 35vw;
+  height: 70vh;
+  margin-top: 10vh;
+  overflow: scroll;
+  font-size: 20px;
 }
