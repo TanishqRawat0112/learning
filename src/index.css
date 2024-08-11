@@ -24,7 +24,7 @@ code {
   width: 28vw;
   border: 2px solid black;
   padding: 1vw;
-  overflow: hidden;
+  overflow:hidden;
 }
 
 .op-img{
