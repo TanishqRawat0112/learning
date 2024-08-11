@@ -2,15 +2,24 @@ import "./index.css";
 import op from "./res/op.jpg";
 import naruto from "./res/naruto.jpg";
 import bleach from "./res/bleach.jpg";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import OpComp from "./card-components/OpComp";
 import NarutoComp from "./card-components/NarutoComp";
 import BleachComp from "./card-components/BleachComp";
+import Showmore from "./Components/Showmore";
 
 function App() {
   const [details, setDetails] = useState("0");
+  const [animes, setAnimes] = useState([]);
+
+  useEffect(()=>{
+      fetch('http://localhost:3001/series')
+       .then(res=>res.json())
+       .then(data=>setAnimes(data))
+       .catch(error=>console.error('Error fetching the database :' , error));
+  },[setAnimes]);
   return (
-    <div>
+    <div className="big-container">
       <h1>Big - 3 Animes :</h1>
       {details === "1" ? (
         <OpComp details={details} setDetails={setDetails} />
@@ -64,6 +73,7 @@ function App() {
           </div>
         </div>
       )}
+      <Showmore animes={animes}/>
     </div>
   );
 }

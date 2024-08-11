@@ -1,0 +1,50 @@
+const  MoreCards  = ({animes}) => {
+    return ( 
+        <div className="ul-container" >
+            {animes.length > 0 ? (
+            <ul className="more-cards-container">
+                {animes.map((anime, index) => (
+                <li key={index}>
+                    <div className="card">
+            <img src={anime.url} alt={anime.name} className="op-img" />
+            <div className="card-data">
+              <h2>{anime.name}</h2>
+              <div className="sub-details">
+                <div className="card-genre">
+                    {anime.genre}
+                </div>
+                <div className="card-side-details">
+                    <div>
+                        rating : {anime.rating}
+                    </div>
+                    <div>
+                        episodes : {anime.episodes}
+                    </div>
+                </div>
+              </div>
+              <div>
+                {anime.description}
+              </div>
+              {/* <h4>Rating : {anime.rating}</h4>
+              <h5>
+                {anime.genre}
+              </h5>
+              <h5>
+                {anime.episodes}
+              </h5>
+              <p>
+                {anime.description}
+              </p> */}
+            </div>
+          </div>
+                </li>
+                ))}
+            </ul>
+            ) : (
+            <p>No series data available.</p>
+        )}
+        </div>
+     );
+}
+ 
+export default MoreCards;
