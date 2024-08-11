@@ -25,6 +25,8 @@ code {
   border: 2px solid black;
   padding: 1vw;
   overflow:hidden;
+  border-radius: 13px;
+  box-shadow: rgb(78, 77, 77) 6px 6px 5px;
 }
 
 .op-img{

@@ -25,16 +25,6 @@ const  MoreCards  = ({animes}) => {
               <div>
                 {anime.description}
               </div>
-              {/* <h4>Rating : {anime.rating}</h4>
-              <h5>
-                {anime.genre}
-              </h5>
-              <h5>
-                {anime.episodes}
-              </h5>
-              <p>
-                {anime.description}
-              </p> */}
             </div>
           </div>
                 </li>
