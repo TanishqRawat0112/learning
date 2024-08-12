@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background: radial-gradient(circle at 10% 20%, rgb(91, 193, 243) 0%, rgb(39, 7, 121) 90%); */
+  background: rgb(40, 39, 39);
 }
 
 
@@ -30,6 +30,8 @@ code {
   overflow:hidden;
   border-radius: 13px;
   box-shadow: rgb(78, 77, 77) 6px 8px 5px;
+  color: white;
+  background-color: black;
 }
 
 .op-img{
@@ -147,17 +149,19 @@ code {
   z-index: 4;
   background-color: white;
   display: flex;
-  background: radial-gradient(circle at 10% 20%, rgb(255, 200, 124) 0%, rgb(252, 251, 121) 90%);
+  background: radial-gradient(circle at 10% 20%, rgb(2, 2, 2) 0%, rgb(100, 100, 99) 90%);
 }
 
 .anime-head{
   position: relative;
   top: 5vh;
+  color: rgb(211, 210, 210);
 }
 
 .site-head{
   position: absolute;
   display: flex;
+  gap: 3px;
   left: 30%;
   top: 2%;
   width: 15%;
@@ -166,7 +170,7 @@ code {
 }
 
 .site-head :first-child{
-  color: rgb(47, 208, 208);
+  color: white;
 }
 
 .site-head :last-child{
