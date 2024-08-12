@@ -1,7 +1,25 @@
-const  MoreCards  = ({animes}) => {
+import { useState,useEffect } from "react";
+import SearchedComp from "./SearchedComp";
+
+const  MoreCards  = ({animes,search}) => {
+    const [name, setName] = useState([]);
+    useEffect(() => {
+      const newName=[];
+      animes.forEach(anime => {
+        let name=anime.name;
+        name=name.toLowerCase();
+        name=name.replace(/[^a-zA-Z0-9 ]/g, "");
+        let updatedName=name.split(" ").join("");
+        newName.push(updatedName);
+      });
+      setName(newName);
+    }, [setName]);
+
     return ( 
         <div className="ul-container" >
-            {animes.length > 0 ? (
+            {search.length > 0 
+            ? <SearchedComp animes={animes} search={search} name={name}/> 
+            : animes.length > 0 ? (
             <ul className="more-cards-container">
                 {animes.map((anime, index) => (
                 <li key={index}>

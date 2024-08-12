@@ -1,5 +1,11 @@
 import logo from '../res/logo.png';
-const Navbar = () => {
+import { useState } from 'react';
+const Navbar = ({setSearch}) => {
+    const [searchedComp,setSearchedComp] = useState(false);
+    const handleSearch = (e) => {
+        const newSearch= e.target.value;
+        setSearch(newSearch);
+    }
     return ( 
         <div className="navbar">
             <div className="logo">
@@ -14,10 +20,12 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="srch-container">
-            <input type="text" placeholder="Search"  className="search"/>
-            <button className="srch-btn">Q</button>
+            <input type="text" placeholder="Search"  className="search" onChange={(e)=>{
+                handleSearch(e);
+            }}/>
+            <button className="srch-btn" onClick={()=>setSearchedComp(true)}>Q</button>
             </div>
-            <button className="hamburger">
+            <button className="hamburger" >
                 E
             </button>
         </div>

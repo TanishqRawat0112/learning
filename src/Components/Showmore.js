@@ -2,12 +2,12 @@ import React from 'react'
 import { useState } from 'react';
 import MoreCards from './MoreCards';
 
-export default function Showmore({animes}) {
+export default function Showmore({animes,search}) {
     const [show,setShow] = useState(false);
     const [less,setLess] = useState(false);
   return (
     <>
-        {show && <MoreCards animes={animes}/>}
+        {show && <MoreCards animes={animes} search={search}/>}
         <button className='show-more' onClick={()=>{
             console.log('Show More button is clicked!!!');
             setShow(!show);

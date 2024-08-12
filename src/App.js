@@ -13,6 +13,7 @@ function App() {
   const [details, setDetails] = useState("0");
   const [animes, setAnimes] = useState([]);
   const [less,SetLess] = useState(false);
+  const [search, setSearch] = useState("");
 
   useEffect(()=>{
       fetch('http://localhost:3001/series')
@@ -22,7 +23,7 @@ function App() {
   },[setAnimes]);
   return (
     <div className="big-container">
-      <Navbar/>
+      <Navbar setSearch={setSearch}/>
       <h1 className="anime-head">Big - 3 Animes :</h1>
       {details === "1" ? (
         <OpComp details={details} setDetails={setDetails} />
@@ -76,7 +77,7 @@ function App() {
           </div>
         </div>
       )}
-      <Showmore animes={animes} onClick={()=>SetLess(true)}/>
+      <Showmore animes={animes} onClick={()=>SetLess(true)} search={search}/>
     </div>
   );
 }
