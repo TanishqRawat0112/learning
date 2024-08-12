@@ -8,12 +8,14 @@ import NarutoComp from "./card-components/NarutoComp";
 import BleachComp from "./card-components/BleachComp";
 import Showmore from "./Components/Showmore";
 import Navbar from "./Components/Navbar";
+import Filters from "./Components/Filters";
 
 function App() {
   const [details, setDetails] = useState("0");
   const [animes, setAnimes] = useState([]);
   const [less,SetLess] = useState(false);
   const [search, setSearch] = useState("");
+  const [showFilters,setShowFilters] = useState(false);
 
   useEffect(()=>{
       fetch('http://localhost:3001/series')
@@ -23,7 +25,8 @@ function App() {
   },[setAnimes]);
   return (
     <div className="big-container">
-      <Navbar setSearch={setSearch}/>
+      <Navbar setSearch={setSearch} showFilters={showFilters} setShowFilters={setShowFilters}/>
+      {showFilters && <Filters showFilters={showFilters} setShowFilters={setShowFilters}/>}
       <h1 className="anime-head">Big - 3 Animes :</h1>
       {details === "1" ? (
         <OpComp details={details} setDetails={setDetails} />

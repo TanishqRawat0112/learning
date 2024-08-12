@@ -1,7 +1,9 @@
 import logo from '../res/logo.png';
+import menu from '../res/menu.png';
 import { useState } from 'react';
-const Navbar = ({setSearch}) => {
+const Navbar = ({setSearch,showFilters,setShowFilters}) => {
     const [searchedComp,setSearchedComp] = useState(false);
+
     const handleSearch = (e) => {
         const newSearch= e.target.value;
         setSearch(newSearch);
@@ -25,8 +27,8 @@ const Navbar = ({setSearch}) => {
             }}/>
             <button className="srch-btn" onClick={()=>setSearchedComp(true)}>Q</button>
             </div>
-            <button className="hamburger" >
-                E
+            <button className="hamburger" onClick={()=>setShowFilters(!showFilters)}>
+                <img src={menu} alt="filter" className='menu'/>
             </button>
         </div>
      );

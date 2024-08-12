@@ -159,6 +159,254 @@
         "url":"https://m.media-amazon.com/images/M/MV5BZDc3NGQ3ZWQtYjNkOC00MjhiLTg2N2YtNmZlOGNiZTFkOWNhXkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_FMjpg_UX1000_.jpg",
         "genre": "Action , Adventure",
         "episodes": 194
+      },
+      {
+        "name":"Neon Genesis Evangelion",
+        "rating":8.5,
+        "description":"A teenage boy finds himself recruited as a member of an elite team of pilots by his father.",
+        "url":"https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
+        "genre":"Action , Drama",
+        "episodes":26
+      },
+      {
+        "name":"Kaguya-sama: Love is War",
+        "rating":8.5,
+        "description":"The proudly privileged top two students of an elite school each makes it their mission to be the first to extract a confession of love from the other.",
+        "url":"https://m.media-amazon.com/images/M/MV5BYjEwNjEwYzgtZGZkMy00MTBjLTg2MmYtNDk0MzY2NmU0MmNiXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg",
+        "genre":"Comedy , Romance",
+        "episodes": 43
+      },
+      {
+        "name":"Saint Seiya: Knights of the Zodiac",
+        "rating":8.5,
+        "description":"A group a young warriors known as 'Saints', each in possession of a 'cloth' guarded by a different constellation, must protect the reincarnation of the goddess Athena as she attempts to keep the Earth from being destroyed by evil forces.",
+        "url":"https://m.media-amazon.com/images/M/MV5BYWY2NzEwYWMtMTk2NS00MTQ1LWI4M2EtN2I5NjMzOGUyYmM0XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg",
+        "genre":"Action , Adventure",
+        "episodes":114
+      },
+      {
+        "name":"Ghost in the Shell: Stand Alone Complex",
+        "rating":8.5,
+        "description":"The futuristic adventures of a female cyborg counter intelligence agent and her support team.",
+        "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHvKIY8GAOwzxIHGMSJL1wxMC3KSe7cNzrNA&s",
+        "genre":"Action , Crime",
+        "episodes":52
+      },
+      {
+        "name":"Chainsaw Man",
+        "rating":8.4,
+        "description":"Following a betrayal, a young man left for dead is reborn as a powerful devil-human hybrid after merging with his pet devil and is soon enlisted into an organization dedicated to hunting devils.",
+        "url":"https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781974709939/chainsaw-man-vol-1-9781974709939_hr.jpg",
+        "genre":"Action , Adventure",
+        "episodes":12
+      },
+      {
+        "name":"Erased",
+        "rating":8.4,
+        "description":"29-year-old Satoru Fujinuma is sent back in time 18 years to prevent the events leading to his mother's death, which began with a series of kidnappings while he was in 5th grade.",
+        "url":"https://m.media-amazon.com/images/M/MV5BYzJmZjZkMjQtZjJmZC00M2JkLTg5MzktN2FkOTllNTc5MmMzXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+        "genre":"Crime , Drama",
+        "episodes":13
+      },
+      {
+        "name":" Ranking of Kings",
+        "rating":8.4,
+        "description":"The people of the kingdom look down on the young Prince Bojji, who can neither hear nor speak. They call him \"The Useless Prince\" while jeering at his supposed foolishness.",
+        "url":"https://m.media-amazon.com/images/M/MV5BN2I2ZDZjZTUtYWZkNC00NDNjLWEyMzktMmQxOTk0NmQwMjVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
+        "genre":"Action , Adventure",
+        "episodes":23
+      },
+      {
+        "name":"Violet Evergarden",
+        "rating":8.4,
+        "description":"In the aftermath of a great war, Violet Evergarden, a young female ex-soldier, gets a job at a writers' agency and goes on assignments to create letters that can connect people.",
+        "url":"https://m.media-amazon.com/images/M/MV5BZmUzMThjOTItZGY4ZS00ODcwLTliNTMtYjVkM2JmY2QxNmRhXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg",
+        "genre":"Drama , Family",
+        "episodes":14
+      },
+      {
+        "name":"Mushoku Tensei: Jobless Reincarnation",
+        "rating":8.3,
+        "description":"A 34-year-old underachiever gets run over by a bus, but his story isn't over. Reincarnated as an infant, he'll embark on an epic adventure.",
+        "url":"https://m.media-amazon.com/images/M/MV5BMGM2MzA5YzYtODc0Ni00ZjU4LWI4ZmUtZGJjNGU0ODY1MGJkXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg",
+        "genre":"Action , Adventure",
+        "episodes":49
+      },
+      {
+        "name":"Spy x Family",
+        "rating":8.3,
+        "description":"A spy on an undercover mission gets married and adopts a child as part of his cover. His wife and daughter have secrets of their own, and all three must strive to keep together.",
+        "url":"https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/095217fdb4f228410df09b18f151be28.jpe",
+        "genre":"Action , Comedy",
+        "episodes":38
+      },
+      {
+        "name":"My Hero Academia",
+        "rating":8.3,
+        "description":"A superhero-admiring boy enrolls in a prestigious hero academy and learns what it really means to be a hero, after the strongest superhero grants him his own powers.",
+        "url":"https://m.media-amazon.com/images/I/81A+3gHzevL._AC_UF1000,1000_QL80_.jpg",
+        "genre":"Action , Adventure",
+        "episodes":159
+      },
+      {
+        "name":"Cyberpunk: Edgerunners",
+        "rating":8.3,
+        "description":"A Street Kid trying to survive in a technology and body modification-obsessed city of the future. Having everything to lose, he chooses to stay alive by becoming an Edgerunner, a Mercenary outlaw also known as a Cyberpunk.",
+        "url":"https://m.media-amazon.com/images/M/MV5BMTQ0MGI4NTgtZTlkNy00YTU5LThjM2ItNDczMGFlZWY2ZWM3XkEyXkFqcGdeQXVyMTM3NDc1OTM2._V1_FMjpg_UX1000_.jpg",
+        "genre":"Action , Adventure",
+        "episodes":10
+      },
+      {
+        "name":"Parasyte: The Maxim",
+        "rating":8.3,
+        "description":"17-year-old Shinichi Izumi is partially infected by a Parasyte, monsters that butcher and consume humans. He must learn to co-exist with the creature if he is to survive both the life of a Parasyte and a human as part monster, part person.",
+        "url":"https://m.media-amazon.com/images/M/MV5BZTViMTZlMjgtNjVmZC00NjEzLWJlN2QtMjQ4ZTYxNzBiZmMyXkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_FMjpg_UX1000_.jpg",
+        "genre":"Action , Drama",
+        "episodes":24
+      },
+      {
+        "name":"Dororo",
+        "rating":8.2,
+        "description":"Sightless Hyakkimaru wields fearsome prosthetics in place of the limbs his father traded to 12 demons. When he encounters the young thief Dororo, the pair sets out to reclaim Hyakkimaru's body parts and survive the demon-infested world.",
+        "url":"https://m.media-amazon.com/images/M/MV5BMTMwNmQyM2EtMDQ2My00Y2FhLWJlYTYtMDMwYWU4MzAwYmI3XkEyXkFqcGdeQXVyMTQ3MjMyMTYz._V1_.jpg",
+        "genre":"Action , Adventure",
+        "episodes":24
+      },
+      {
+        "name":"The Disastrous Life of Saiki K.",
+        "rating":8.3,
+        "description":"Saiki Kusuo is a powerful psychic who hates attracting attention, yet he is surrounded by colorful characters who always find a way to remove him from his everyday life.",
+        "url":"https://m.media-amazon.com/images/M/MV5BYmFiNTU2YWUtZjVjYy00MDJmLThlNzMtYTBhNzZmMmUyN2JlXkEyXkFqcGdeQXVyMTMzNDc0Nzky._V1_FMjpg_UX1000_.jpg",
+        "genre":"Comedy , Fantasy",
+        "episodes":146
+      },
+      {
+        "name":"Dr. Stone",
+        "rating":8.1,
+        "description":"Awakened into a world where humanity has been petrified, scientific genius Senku and his brawny friend Taiju use their skills to rebuild civilization.",
+        "url":"https://m.media-amazon.com/images/M/MV5BYmU2MzEyMjAtOTQ5Yy00NGMxLTg0NmItMTQ0ZTM5OGY0NjUzXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
+        "genre":"Action , Adventure",
+        "episodes":59
+      },
+      {
+        "name":"Rurouni Kenshin",
+        "rating":8.5,
+        "description":"The adventures of a young wandering swordsman who stumbles upon a struggling martial arts school in Meiji era Japan.",
+        "url":"https://m.media-amazon.com/images/M/MV5BMzEwMmY2MjktNzEyMC00ODFlLTlkNmQtNzAwYjJjZDY1MDNmXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg",
+        "genre":"Action , Adventure",
+        "episodes":95
+      },
+      {
+        "name":"Tokyo Revengers",
+        "rating":7.8,
+        "description":"Hanagaki Takemichi lives an unsatisfying life right up until his death. Waking up 12 years in the past, he reckons with the eventual fate of his friends and tries to prevent an unfortunate future.",
+        "url":"https://m.media-amazon.com/images/M/MV5BMTdmYmVlODktNWM0Yi00NDNlLWJhMjQtMzg1MzVhYzU1N2IwXkEyXkFqcGdeQXVyMTcxNDcyNDA4._V1_FMjpg_UX1000_.jpg",
+        "genre":"Action , Drama",
+        "episodes":48
+      },
+      {
+        "name":"Black Clover",
+        "rating":8.2,
+        "description":"Asta and Yuno were abandoned together at the same church and have been inseparable since. As children, they promised that they would compete against each other to see who would become the next Emperor Magus.",
+        "url":"https://m.media-amazon.com/images/M/MV5BNTAzYTlkMWEtOTNjZC00ZDU0LWI5ODUtYTRmYzY0MTAzYWZlXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg",
+        "genre":"Action , Adventure",
+        "episodes":170
+      },
+      {
+        "name":"The Promised Neverland",
+        "rating":8.2,
+        "description":"When three gifted kids at an isolated idyllic orphanage discover the secret and sinister purpose they were raised for, they look for a way to escape from their evil caretaker and lead the other children in a risky escape plan.",
+        "url":"https://m.media-amazon.com/images/M/MV5BMTYwYjYyZDgtMTQ3My00YTI4LThmZTUtZmU1MjllOWRlOTdhXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg",
+        "genre":"Action , Adventure",
+        "episodes":24
+      },
+      {
+        "name":"Kimi ni Todoke: From Me to You",
+        "rating":7.8,
+        "description":"Two teenagers share a profound, magical connection upon discovering they are swapping bodies. Things manage to become even more complicated when the boy and girl decide to meet in person.",
+        "url":"https://image.tmdb.org/t/p/original/kka0aBfSmhxYopCW0FzDWzljRhG.jpg",
+        "genre":"Comedy , Drama",
+        "episodes":43
+      },
+      {
+        "name":"My Dress-Up Darling",
+        "rating":8.0,
+        "description":"A quiet loner and the popular girl at school find common ground, making their cosplay dreams come true.",
+        "url":"https://m.media-amazon.com/images/M/MV5BMzkyYWY3NTEtYzBkNC00Zjc3LThmY2UtZWU3MTRkMTgwODU5XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg",
+        "genre":"Comedy , Romance",
+        "episodes":12
+      },
+      {
+        "name":"My Happy Marriage",
+        "rating":7.7,
+        "description":"An unhappy young woman from an abusive family is married off to a fearsome and chilly army commander. But the two learn more about each other, love may have a chance.",
+        "url":"https://m.media-amazon.com/images/M/MV5BNjdlZWY1MzctOGUxNS00YmViLWFiOTMtNmQxMmZhMjQ5MjhhXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg",
+        "genre":"Drama , Fantasy",
+        "episodes":12
+      },
+      {
+        "name":"Horimiya",
+        "rating":8.1,
+        "description":"Two very different people - an academically successful schoolgirl and a quiet loser schoolboy - meet and develop a friendship.",
+        "url":"https://m.media-amazon.com/images/M/MV5BZWNiY2IwMGUtYTk1NC00NmE5LWE4NTItYmQyNDJmMGU2MDMwXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg",
+        "genre":"Comedy , Romance",
+        "episodes":13
+      },
+      {
+        "name":"Rent a GirlFriend",
+        "rating":6.9,
+        "description":"After being dumped by his girlfriend, a college student enlists a dating service to \"rent\" a girlfriend who, unbeknownst to him, happens to be both a fellow student and his neighbor.",
+        "url":"https://m.media-amazon.com/images/M/MV5BZDM0YWNjNGQtNWJjMS00YTliLWE4YjItOGQzNWQxMmNkZDg4XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg",
+        "genre":"Comedy , Romance",
+        "episodes":37
+      },
+      {
+        "name":"Wind Breaker",
+        "rating":7.5,
+        "description":"Haruka Sakura has no interest in weaklings, only the strongest fighters. Starting at Furin High, a school known for student brawlers who protect their town, Haruka seeks to battle his way to the top.",
+        "url":"https://m.media-amazon.com/images/M/MV5BNDU3OGFjZDAtNDY2Ny00YTY1LThhYzUtMmZkMDE3OWRkYTcyXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
+        "genre":"Action , Adventure",
+        "episodes":14
+      },
+      {
+        "name":"Kaiju No. 8",
+        "rating":8.4,
+        "description":"A man working a job far removed from his childhood dreams gets wrapped up in an unexpected situation - Becoming a monster, he aims once again to fulfill his lifelong dream.",
+        "url":"https://m.media-amazon.com/images/M/MV5BMzUxOTBlNzMtYzAyZi00MDNhLWE3OGUtYWQ5MzQyZGE1OGYwXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg",
+        "genre":"Action , Adventure",
+        "episodes":12
+      },
+      {
+        "name":"Mashle: Magic and Muscles",
+        "rating":7.6,
+        "description":"Into a world of magicians is born Mash, a young boy who lacks magic but is the strongest person around. His existence and destiny will change his world.",
+        "url":"https://m.media-amazon.com/images/M/MV5BZDE0ZTRhMTQtMTIzNC00NjY4LTllMmEtYjY4Y2ZlZmZlODU0XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_FMjpg_UX1000_.jpg",
+        "genre":"Action , Comedy",
+        "episodes":25
+      },
+      {
+        "name":"Ninja Kamui",
+        "rating":7.2,
+        "description":"Former ninja Joe Higan is ambushed by assassins who seek bloody revenge on him and his family for their betrayal, after escaping his clan and fleeing into rural America.",
+        "url":"https://m.media-amazon.com/images/M/MV5BYzJjMDQyNzEtZjAxMS00OTg2LTg4YjYtYTlmZjJkZjc3MDhiXkEyXkFqcGdeQXVyMTY0ODA4Njkw._V1_FMjpg_UX1000_.jpg",
+        "genre":"Action , Crime",
+        "episodes":13
+      },
+      {
+        "name":"Solo Leveling",
+        "rating":8.3,
+        "description":"Follows the adventures Sung Jinwoo in a world that is constantly threatened by monsters and the evil forces. In his battles Sung transforms himself from weakest hunter of all mankind to one of the strongest hunters in existence.",
+        "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjjydKUpH1rz3V2N2oTcKX7O3QIMkH_-xqqw&s",
+        "genre":"Action , Adventure",
+        "episodes":14
+      },
+      {
+        "name":"A Sign of Affection",
+        "rating":7.8,
+        "description":"When Yuki meets a handsome stranger who helps her out on the train, what sort of relationship will bloom? Could this be something real? Or will these feelings melt away with the snow?",
+        "url":"https://m.media-amazon.com/images/M/MV5BMmIxNWFjYzgtM2NkMy00NTdkLWE4ZTEtMmY3NzU2MjA5MjAxXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
+        "genre":"Action , Adventure",
+        "episodes":12
       }
     ]
 }
