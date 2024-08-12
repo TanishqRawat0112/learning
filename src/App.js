@@ -11,6 +11,7 @@ import Showmore from "./Components/Showmore";
 function App() {
   const [details, setDetails] = useState("0");
   const [animes, setAnimes] = useState([]);
+  const [less,SetLess] = useState(false);
 
   useEffect(()=>{
       fetch('http://localhost:3001/series')
@@ -73,7 +74,7 @@ function App() {
           </div>
         </div>
       )}
-      <Showmore animes={animes}/>
+      <Showmore animes={animes} onClick={()=>SetLess(true)}/>
     </div>
   );
 }

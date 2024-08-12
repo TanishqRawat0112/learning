@@ -26,13 +26,14 @@ code {
   padding: 1vw;
   overflow:hidden;
   border-radius: 13px;
-  box-shadow: rgb(78, 77, 77) 6px 6px 5px;
+  box-shadow: rgb(78, 77, 77) 6px 8px 5px;
 }
 
 .op-img{
   height: 55vh;
   width: 28vw;
   margin: 2px;
+  border-radius: 13px;
 }
 
 .card-data{
