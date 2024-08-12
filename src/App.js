@@ -7,6 +7,7 @@ import OpComp from "./card-components/OpComp";
 import NarutoComp from "./card-components/NarutoComp";
 import BleachComp from "./card-components/BleachComp";
 import Showmore from "./Components/Showmore";
+import Navbar from "./Components/Navbar";
 
 function App() {
   const [details, setDetails] = useState("0");
@@ -21,7 +22,8 @@ function App() {
   },[setAnimes]);
   return (
     <div className="big-container">
-      <h1>Big - 3 Animes :</h1>
+      <Navbar/>
+      <h1 className="anime-head">Big - 3 Animes :</h1>
       {details === "1" ? (
         <OpComp details={details} setDetails={setDetails} />
       ) : details === "2" ? (
