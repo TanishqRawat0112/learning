@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react";
 
 const SearchedComp = ({animes,search,name}) => {
+    console.log('Animes length : '+animes.length);
     const [searchAnime,setSearchAnime] = useState([]);
 
     function isPresent(name,search){

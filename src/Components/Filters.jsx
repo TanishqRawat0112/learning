@@ -1,23 +1,25 @@
 import close from '../res/close.png';
-import { useState } from 'react';
 
-const Filters = ({showFilters,setShowFilters,filterRating,setFilterRating,filterEp,setFilterEp}) => {
-    // const [fr, setFr] = useState(5);
-    // const [fe, setFe] = useState(187);
+const Filters = ({showFilters,setShowFilters,filterRating,setFilterRating,filterEp,setFilterEp,setAppliedRating,setAppliedEp}) => {
     const handleChangeOnRating = (e) => {
         const newFilterValue=(e.target.value)/10;
         setFilterRating(newFilterValue);
-        // setFr(newFilterValue);
     }
     const handleChangeOnEp = (e) => {
         const newFilterValue=parseInt((e.target.value)*375/100);
         setFilterEp(newFilterValue);
-        // setFe(newFilterValue);
     }
 
     const handleReset = () => {
         setFilterEp(187);
         setFilterRating(5);
+        setAppliedRating(0);
+        setAppliedEp(375);
+    }
+
+    const applyChanges = () => {
+        setAppliedRating(filterRating);
+        setAppliedEp(filterEp);
     }
 
     return ( 
@@ -39,7 +41,7 @@ const Filters = ({showFilters,setShowFilters,filterRating,setFilterRating,filter
                             Min Rating
                         </div>
                         <div className='filter-input'>
-                            <input type="range" name="rating" className='slider' onChange={(e)=>handleChangeOnRating(e)}/>
+                            <input type="range" name="rating" className='slider'  onChange={(e)=>handleChangeOnRating(e)}/>
                         </div>
                         <div className="value">
                             {filterRating}
@@ -70,7 +72,10 @@ const Filters = ({showFilters,setShowFilters,filterRating,setFilterRating,filter
                     }}>
                     RESET
                 </div>
-                <div className='filter-apply' onClick={()=>setShowFilters(!showFilters)}>
+                <div className='filter-apply' onClick={()=>{
+                    applyChanges();
+                    setShowFilters(!showFilters);
+                    }}>
                     APPLY
                 </div>
             </div>

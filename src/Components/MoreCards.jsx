@@ -1,27 +1,40 @@
 import { useState, useEffect } from "react";
 import SearchedComp from "./SearchedComp";
 
-const MoreCards = ({ animes, search }) => {
+const MoreCards = ({ animes, search,appliedRating,appliedEp }) => {
+  const [updatedAnimes,setUpdatedAnimes] = useState([]);
   const [name, setName] = useState([]);
   useEffect(() => {
     const newName = [];
-    animes.forEach((anime) => {
-      let name = anime.name;
-      name = name.toLowerCase();
-      name = name.replace(/[^a-zA-Z0-9 ]/g, "");
-      let updatedName = name.split(" ").join("");
-      newName.push(updatedName);
+    const newAnimes=[];
+
+    animes.forEach((anime)=>{
+      if(anime.rating>=appliedRating && anime.episodes<=appliedEp){
+        newAnimes.push(anime);
+      }
     });
+    setUpdatedAnimes(newAnimes);
+    animes.forEach((anime) => {
+      if(anime.rating>=appliedRating && anime.episodes<=appliedEp){
+        let name = anime.name;
+        name = name.toLowerCase();
+        name = name.replace(/[^a-zA-Z0-9 ]/g, "");
+        let updatedName = name.split(" ").join("");
+        newName.push(updatedName);
+      }
+    }); 
     setName(newName);
-  }, [setName]);
+    
+  }, [setName,setUpdatedAnimes,appliedRating,appliedEp]);
+  console.log("Anime length : "+updatedAnimes.length);
 
   return (
     <div className="ul-container">
       {search.length > 0 ? (
-        <SearchedComp animes={animes} search={search} name={name} />
+        <SearchedComp animes={updatedAnimes} search={search} name={name} />
       ) : animes.length > 0 ? (
         <ul className="more-cards-container">
-          {animes.map((anime, index) => (
+          {updatedAnimes.map((anime, index) => (
             <li key={index}>
               <div className="card">
                 <img src={anime.url} alt={anime.name} className="op-img" />
