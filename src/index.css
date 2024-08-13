@@ -125,6 +125,8 @@ code {
   justify-content: space-around;
   height: 35px;
   font-size: small;
+  /* background-color: rgb(46, 45, 45);
+  border-radius: 12px; */
 }
 
 .card-genre{
@@ -234,7 +236,7 @@ code {
 .filter-container{
   position: fixed;
   background-color: rgb(18, 17, 17);
-  width: 25%;
+  width: 33%;
   height: 100%;
   right: 0px;
   top: 0px;
@@ -250,6 +252,8 @@ code {
   font-size: 36px;
   color: rgb(211, 210, 210);
   font-weight: bolder;
+  margin-left: 8%;
+  margin-top: 1%;
 }
 
 .close{
@@ -271,6 +275,75 @@ code {
   font-weight: bold;
   font-size: 24px;
   text-align: center;
+}
+
+.card-data h2{
+  /* background-color: rgb(46, 45, 45);
+  border-radius: 12px; */
+  padding-left: 2%;
+}
+
+.filter-options{
+  width: 85%;
+  height: 7vh;
+  margin-left: 3vw;
+  display: flex;
+  gap: 20%;
+  font-weight: bolder;
+}
+
+.filter-reset{
+  color: rgb(167, 164, 164);
+  /* background-color: rgb(45, 44, 44); */
+  background-color: rgb(18, 17, 17);
+  width: 38%;
+  height: 85%;
+  border-radius: 25px;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 3%;
+  /* border: 2px solid white; */
+}
+
+.filter-reset:hover{
+  /* background-color: white; */
+  color: white;
+}
+
+.filter-apply{
+  color: black;
+  background-color: white;
+  width: 38%;
+  height: 85%;
+  border-radius: 25px;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 3%;
+  border: 2px solid rgb(99, 98, 98);
+}
+
+.filter-apply:hover{
+  color: white;
+  background-color: rgb(45, 44, 44);
+  border: 2px solid white;
+  width: 39%;
+  height: 87%;
+}
+.filter-input{
+  width: 97%;
+  margin: 1vh;
+}
+
+.slider{
+  width: 100%;
+  filter: invert(1);
+}
+
+.value{
+  background-color: rgb(18,17,17);
+  width: 18%;
+  margin-left: 41%;
+  border-radius: 14px;
 }
 
 

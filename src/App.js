@@ -2,7 +2,7 @@ import "./index.css";
 import op from "./res/op.jpg";
 import naruto from "./res/naruto.jpg";
 import bleach from "./res/bleach.jpg";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import OpComp from "./card-components/OpComp";
 import NarutoComp from "./card-components/NarutoComp";
 import BleachComp from "./card-components/BleachComp";
@@ -13,20 +13,28 @@ import Filters from "./Components/Filters";
 function App() {
   const [details, setDetails] = useState("0");
   const [animes, setAnimes] = useState([]);
-  const [less,SetLess] = useState(false);
+  const [less, SetLess] = useState(false);
   const [search, setSearch] = useState("");
-  const [showFilters,setShowFilters] = useState(false);
+  const [showFilters, setShowFilters] = useState(false);
+  const [filterRating,setFilterRating] = useState(5);
+  const [filterEp,setFilterEp] = useState(186);
 
-  useEffect(()=>{
-      fetch('http://localhost:3001/series')
-       .then(res=>res.json())
-       .then(data=>setAnimes(data))
-       .catch(error=>console.error('Error fetching the database :' , error));
-  },[setAnimes]);
+  useEffect(() => {
+    fetch("http://localhost:3001/series")
+      .then((res) => res.json())
+      .then((data) => setAnimes(data))
+      .catch((error) => console.error("Error fetching the database :", error));
+  }, [setAnimes]);
   return (
     <div className="big-container">
-      <Navbar setSearch={setSearch} showFilters={showFilters} setShowFilters={setShowFilters}/>
-      {showFilters && <Filters showFilters={showFilters} setShowFilters={setShowFilters}/>}
+      <Navbar
+        setSearch={setSearch}
+        showFilters={showFilters}
+        setShowFilters={setShowFilters}
+      />
+      {showFilters && (
+        <Filters showFilters={showFilters} setShowFilters={setShowFilters} filterRating={filterRating} setFilterRating={setFilterRating} filterEp={filterEp} setFilterEp={setFilterEp}/>
+      )}
       <h1 className="anime-head">Big - 3 Animes :</h1>
       {details === "1" ? (
         <OpComp details={details} setDetails={setDetails} />
@@ -80,7 +88,7 @@ function App() {
           </div>
         </div>
       )}
-      <Showmore animes={animes} onClick={()=>SetLess(true)} search={search}/>
+      <Showmore animes={animes} onClick={() => SetLess(true)} search={search} />
     </div>
   );
 }
