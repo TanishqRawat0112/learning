@@ -25,8 +25,7 @@ const MoreCards = ({ animes, search,appliedRating,appliedEp }) => {
     }); 
     setName(newName);
     
-  }, [setName,setUpdatedAnimes,appliedRating,appliedEp]);
-  console.log("Anime length : "+updatedAnimes.length);
+  }, [setName,setUpdatedAnimes,appliedRating,appliedEp,search]);
 
   return (
     <div className="ul-container">
