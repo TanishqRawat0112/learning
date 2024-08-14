@@ -1,6 +1,47 @@
 import close from '../res/close.png';
+import { useState,useEffect } from 'react';
+import GenreComp from './GenreComp';
 
-const Filters = ({showFilters,setShowFilters,filterRating,setFilterRating,filterEp,setFilterEp,setAppliedRating,setAppliedEp}) => {
+const Filters = ({showFilters,setShowFilters,filterRating,setFilterRating,filterEp,setFilterEp,setAppliedRating,setAppliedEp,genres,setGenres,selectedGenres,setSelectedGenres}) => {
+    
+    useEffect(() => {
+      if(genres.length === 0){let availableGenres = [
+        {
+            "name":"Action",
+            "selected":false
+        },
+        {
+            "name":"Adventure",
+            "selected":false
+        },
+        {
+            "name":"Comedy",
+            "selected":false
+        },
+        {
+            "name":"Crime",
+            "selected":false
+        },
+        {
+            "name":"Family",
+            "selected":false
+        },
+        {
+            "name":"Fantasy",
+            "selected":false
+        },
+        {
+            "name":"Romance",
+            "selected":false
+        }
+    ];
+        setGenres(availableGenres);
+    }
+    else{
+        setGenres(genres);
+    }
+    }, [setGenres]); 
+
     const handleChangeOnRating = (e) => {
         const newFilterValue=(e.target.value)/10;
         setFilterRating(newFilterValue);
@@ -15,6 +56,7 @@ const Filters = ({showFilters,setShowFilters,filterRating,setFilterRating,filter
         setFilterRating(5);
         setAppliedRating(0);
         setAppliedEp(375);
+        setGenres([]);
     }
 
     const applyChanges = () => {
@@ -58,10 +100,11 @@ const Filters = ({showFilters,setShowFilters,filterRating,setFilterRating,filter
                             {filterEp}
                         </div>
                     </li>
-                    <li className='filter'>
+                    <li className='filter filter-genre'>
                         <div className='filter-name'>
                             Genre
                         </div>
+                        <GenreComp genres={genres} setGenres={setGenres} selectedGenres={selectedGenres} setSelectedGenres={setSelectedGenres} />
                     </li>
                 </ul>
             </div>

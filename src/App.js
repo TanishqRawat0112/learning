@@ -20,6 +20,8 @@ function App() {
   const [filterEp,setFilterEp] = useState(186);
   const [appliedRating,setAppliedRating] = useState(0);
   const [appliedEp,setAppliedEp] = useState(375);
+  const [genres,setGenres] = useState([]);
+  const [selectedGenres,setSelectedGenres] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:3001/series")
@@ -35,7 +37,9 @@ function App() {
         setShowFilters={setShowFilters}
       />
       {showFilters && (
-        <Filters showFilters={showFilters} setShowFilters={setShowFilters} filterRating={filterRating} setFilterRating={setFilterRating} filterEp={filterEp} setFilterEp={setFilterEp} setAppliedRating={setAppliedRating} setAppliedEp={setAppliedEp} />
+        <Filters showFilters={showFilters} setShowFilters={setShowFilters} filterRating={filterRating} setFilterRating={setFilterRating} filterEp={filterEp} setFilterEp={setFilterEp} setAppliedRating={setAppliedRating} setAppliedEp={setAppliedEp}
+        genres={genres} setGenres={setGenres} selectedGenres={selectedGenres} setSelectedGenres={setSelectedGenres}
+        />
       )}
       <h1 className="anime-head">Big - 3 Animes :</h1>
       {details === "1" ? (
