@@ -35,6 +35,7 @@ const Navbar = ({ setSearch, showFilters, setShowFilters }) => {
         className="hamburger"
         onClick={() => setShowFilters(!showFilters)}
       >
+        
         <img src={menu} alt="filter" className="menu" />
       </button>
     </div>
